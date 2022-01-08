@@ -15,7 +15,7 @@ const LandingPage = () => {
           <meta property="og:title" content="Czysto JuÅ¼ - SprzÄtanie w Opolu" />
           <meta property="og:description" content="SprzÄtanie w Opolu" />
         </Head>
-        <div className="top-container">
+        <header className="top-container">
           <nav data-role="Header" className="navbar">
             <Link href="/">
               <a className="link">
@@ -106,7 +106,7 @@ const LandingPage = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </header>
         <div id="main-section" className="main">
           <h1 className="text14">Naszy usÅugi</h1>
           <div className="container1">
