@@ -64,7 +64,7 @@ const LandingPage = () => {
                 </h2>
                 <span className="text05">
                   <span className="text06">
-                    Sprzątanie domów, biur i wszystkiego, co powinno byÄ idealne
+                    SprzÄtanie domÃ³w, biur i wszystkiego, co powinno byÄ idealne
                   </span>
                   <span className="text07"></span>
                 </span>
@@ -173,7 +173,7 @@ const LandingPage = () => {
                   description='Firma sprzÄtajÄca "Czysto JuÅ¼" oferuje usÅugÄ - codzienne sprzÄtanie pomieszczeÅ biurowych, ktÃ³re ma na celu utrzymanie PaÅstwa biura w atrakcyjnej dla klientÃ³w formie.UsÅuga sprzÄtania biurowcÃ³w pozwala pracownikom biurowym skoncentrowaÄ siÄ na swojej pracy.'
                   rootClassName="rootClassName2"
                   className="component6"
-                ></Usluga
+                ></Usluga>
               </a>
             </Link>
             <Link href="/sprztanieporemoncie">
@@ -189,24 +189,23 @@ const LandingPage = () => {
             </Link>
           </div>
           <h1 className="text15">Skontaktuj siÄ z nami !</h1>
-          <form action="http://mihailmaximov.ru/projects/mail/post.php" method="post" name="form">
-  <input name="name" type="text" placeholder="Imie" />
-  <br>
-  <input name="email" type="text" placeholder="E-mail/Kontakt" />
-  <br>
- <p><select name="list1">
-  <option>Wybierz temat</option>
-  <option>Sprzątanie Biura</option>
-  <option>Sprzątanie Mieszkania</option>
-  <option>Sprzątanie po remoncie</option>
- </select></p>
-  <br>
-  </textarea>
-  <br>
-
-  <input type="submit" value="Wyśli" />
-</form>
-          />
+          <form
+            name="contact-form"
+            action="https://czystojuz.pl/post.php"
+            method="post"
+            enctype="multipart/form-data"
+            className="form"
+          >
+            <input type="text" placeholder="Imie" className="textinput input" />
+            <input
+              type="text"
+              placeholder="Kontakt"
+              className="textinput1 input"
+            />
+            <button type="submit" autoFocus="true" className="button">
+              Button
+            </button>
+          </form>
         </div>
         <div className="footer">
           <div className="menu">
@@ -333,22 +332,6 @@ const LandingPage = () => {
             flex-direction: row;
             justify-content: space-between;
           }
-          input {
-  display: inline-block;
-  margin: 10px auto;
-  border: 2px solid #eee;
-  padding: 10px 20px;
-  font-family: Verdana, Arial, sans-serif;
-  font-size: 16px;
-}
-textarea {
-  display: inline-block;
-  margin: 10px auto;
-  border: 2px solid #eee;
-  padding: 10px 20px;
-  font-family: Verdana, Arial, sans-serif;
-  font-size: 16px;
-}
           .link01 {
             font-size: 18px;
             font-style: normal;
@@ -551,6 +534,11 @@ textarea {
             align-self: center;
             margin-bottom: 2%;
           }
+          .form {
+            width: 40%;
+            height: 60%;
+            position: relative;
+          }
           .textinput {
             width: 465px;
             border-radius: 20px;
@@ -559,6 +547,18 @@ textarea {
             width: 465px;
             margin-top: 10px;
             border-radius: 20px;
+          }
+          .button {
+            color: #ffffff;
+            font-size: 20px;
+            font-style: normal;
+            margin-top: 5%;
+            text-align: center;
+            font-weight: 700;
+            line-height: 1;
+            margin-left: 40%;
+            margin-right: 40%;
+            background-color: #bf0404;
           }
           .footer {
             color: var(--dl-color-gray-white);
