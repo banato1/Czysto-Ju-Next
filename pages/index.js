@@ -191,7 +191,7 @@ const LandingPage = () => {
           <h1 className="text15">Skontaktuj siÄ z nami !</h1>
           <form
             name="contact-form"
-            action="https://czystojuz.pl/post.php"
+            action="Czysto-Ju-Next/post.php"
             method="post"
             enctype="multipart/form-data"
             className="form"
@@ -557,7 +557,9 @@ const LandingPage = () => {
             font-weight: 700;
             line-height: 1;
             margin-left: 40%;
+            border-color: #ffffff;
             margin-right: 40%;
+            border-radius: 20px;
             background-color: #bf0404;
           }
           .footer {
