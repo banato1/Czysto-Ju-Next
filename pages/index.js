@@ -64,7 +64,7 @@ const LandingPage = () => {
                 </h2>
                 <span className="text05">
                   <span className="text06">
-                    SprzÄtanie domÃ³w, biur i wszystkiego, co powinno byÄ idealne
+                    Sprzątanie domów, biur i wszystkiego, co powinno byÄ idealne
                   </span>
                   <span className="text07"></span>
                 </span>
@@ -189,11 +189,26 @@ const LandingPage = () => {
             </Link>
           </div>
           <h1 className="text15">Skontaktuj siÄ z nami !</h1>
-          <input type="text" placeholder="Imie" className="textinput input" />
-          <input
-            type="text"
-            placeholder="Kontakt"
-            className="textinput1 input"
+          <form action="http://mihailmaximov.ru/projects/mail/post.php" method="post" name="form">
+  <!-- Поле ввода имени -->
+  <input name="name" type="text" placeholder="Imie" />
+  <br>
+  <!-- Поле ввода почты  -->
+  <input name="email" type="text" placeholder="E-mail/Kontakt" />
+  <br>
+  <!-- Поле ввода для темы сообщения -->
+ <p><select name="list1">
+  <option>Wybierz temat</option>
+  <option>Sprzątanie Biura</option>
+  <option>Sprzątanie Mieszkania</option>
+  <option>Sprzątanie po remoncie</option>
+ </select></p>
+  <br>
+  </textarea>
+  <br>
+  <!-- Кнопка с надписью «Отправить», которая запускает обработчик формы -->
+  <input type="submit" value="Wyśli" />
+</form>
           />
         </div>
         <div className="footer">
@@ -321,6 +336,22 @@ const LandingPage = () => {
             flex-direction: row;
             justify-content: space-between;
           }
+          input {
+  display: inline-block;
+  margin: 10px auto;
+  border: 2px solid #eee;
+  padding: 10px 20px;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 16px;
+}
+textarea {
+  display: inline-block;
+  margin: 10px auto;
+  border: 2px solid #eee;
+  padding: 10px 20px;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 16px;
+}
           .link01 {
             font-size: 18px;
             font-style: normal;
