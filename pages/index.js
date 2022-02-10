@@ -13,7 +13,14 @@ const LandingPage = () => {
           <title>Czysto JuÅ¼ - SprzÄtanie w Opolu</title>
           <meta name="description" content="SprzÄtanie w Opolu" />
           <meta property="og:title" content="Czysto JuÅ¼ - SprzÄtanie w Opolu" />
-          <meta property="og:description" content="SprzÄtanie w Opolu" />
+          <meta
+            property="og:description"
+            content="Profesjonalna firma sprzÄtajÄca na terenie miasta Opola, pomoÅ¼emy Ci posprzÄtaÄ TwÃ³j dom, mieszkanie, biuro oraz po remoncie! Lepsza cena i jakoÅÄ!"
+          />
+          <meta
+            property="og:image"
+            content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b2b3b878-ffff-41fe-94c1-cd4ae51d6255/9a7c4e78-2c9e-4751-8914-f34403e1604d?org_if_sml=1"
+          />
         </Head>
         <header className="top-container">
           <nav data-role="Header" className="navbar">

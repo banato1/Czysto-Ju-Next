@@ -19,10 +19,17 @@ const Sprztanieporemoncie = () => {
             property="og:title"
             content="SprzÄtanie po remoncie - Czysto JuÅ¼ - SprzÄtanie w Opolu"
           />
-          <meta property="og:description" content="SprzÄtanie w Opolu" />
+          <meta
+            property="og:description"
+            content="Profesjonalna firma sprzÄtajÄca na terenie miasta Opola, pomoÅ¼emy Ci posprzÄtaÄ TwÃ³j dom, mieszkanie, biuro oraz po remoncie! Lepsza cena i jakoÅÄ!"
+          />
+          <meta
+            property="og:image"
+            content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/b2b3b878-ffff-41fe-94c1-cd4ae51d6255/9a7c4e78-2c9e-4751-8914-f34403e1604d?org_if_sml=1"
+          />
         </Head>
         <div className="top-container">
-          <nav data-role="Header" className="navbar">
+          <nav className="navbar">
             <Link href="/">
               <a className="link">
                 <h1 className="logo">
@@ -60,22 +67,20 @@ const Sprztanieporemoncie = () => {
               </div>
             </div>
           </nav>
-          <div className="hero">
-            <div className="content-container">
-              <h1 className="text01 heading">
-                Firma sprzÄtajÄca w Opolu &quot;Czysto JuÅ¼&quot; profesjonalne
-                sprzÄtanie po remoncie
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: ' ',
-                  }}
-                />
-              </h1>
-              <SolidButton
-                button="ZamÃ³w wycenÄ"
-                rootClassName="rootClassName16"
-              ></SolidButton>
-            </div>
+          <div className="content-container">
+            <h1 className="text01 heading">
+              Firma sprzÄtajÄca w Opolu &quot;Czysto JuÅ¼&quot; profesjonalne
+              sprzÄtanie po remoncie
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: ' ',
+                }}
+              />
+            </h1>
+            <SolidButton
+              button="ZamÃ³w wycenÄ"
+              rootClassName="rootClassName16"
+            ></SolidButton>
           </div>
         </div>
         <div id="main-section" className="main">
@@ -394,19 +399,6 @@ const Sprztanieporemoncie = () => {
           .component {
             text-decoration: none;
           }
-          .hero {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            position: relative;
-            align-items: flex-start;
-            padding-top: var(--dl-space-space-tripleunit);
-            padding-left: var(--dl-space-space-doubleunit);
-            padding-right: var(--dl-space-space-doubleunit);
-            flex-direction: row;
-            padding-bottom: var(--dl-space-space-tripleunit);
-            justify-content: flex-start;
-          }
           .content-container {
             width: 80%;
             height: 55%;
@@ -706,21 +698,12 @@ const Sprztanieporemoncie = () => {
             width: 24px;
             height: 24px;
           }
-          @media (max-width: 991px) {
-            .hero {
-              padding-left: var(--dl-space-space-tripleunit);
-              padding-right: var(--dl-space-space-tripleunit);
-            }
-          }
           @media (max-width: 767px) {
             .top-container {
               width: 100%;
             }
             .right-side {
               display: none;
-            }
-            .hero {
-              justify-content: center;
             }
             .content-container {
               align-items: center;
@@ -744,14 +727,28 @@ const Sprztanieporemoncie = () => {
           }
           @media (max-width: 479px) {
             .container {
-              align-items: center;
+              align-items: stretch;
               justify-content: space-between;
             }
             .top-container {
-              flex: 0 0 auto;
-              width: auto;
+              width: 100%;
               height: auto;
+              max-width: 100%;
+              min-width: 100%;
+              align-self: center;
+              max-height: 100%;
+              min-height: 100%;
+              align-items: center;
+              justify-content: flex-start;
+            }
+            .navbar {
+              padding: var(--dl-space-space-halfunit);
+              max-width: 100%;
+              min-width: 25%;
               align-self: stretch;
+              min-height: 100%;
+              align-items: stretch;
+              justify-content: space-between;
             }
             .logo {
               width: auto;
@@ -774,18 +771,36 @@ const Sprztanieporemoncie = () => {
             .link04 {
               margin-right: 0px;
             }
-            .hero {
+            .content-container {
               width: auto;
+              height: auto;
+              align-self: center;
+              margin-top: 5%;
+              align-items: center;
+              margin-left: 0px;
+              margin-right: 0%;
+              margin-bottom: 0px;
+              justify-content: center;
             }
             .text01 {
-              width: auto;
+              top: -483px;
+              left: -207px;
+              width: 100%;
+              height: auto;
+              margin: 00%;
+              position: static;
               font-size: 2rem;
               text-align: justify;
+              padding-left: 5%;
+              padding-right: 5%;
             }
             .main {
-              width: 100%;
-              height: 100%;
+              width: auto;
+              height: auto;
+              align-self: center;
               align-items: stretch;
+              padding-top: var(--dl-space-space-unit);
+              padding-bottom: var(--dl-space-space-unit);
             }
             .image {
               display: none;

@@ -116,7 +116,7 @@ const SolidButton = (props) => {
             left: 0px;
             bottom: 0px;
             align-self: center;
-            margin-top: 2%;
+            margin-top: 25%;
           }
           .rootClassName21 {
             flex: 1;
@@ -163,6 +163,19 @@ const SolidButton = (props) => {
             }
             .rootClassName23 {
               display: none;
+            }
+          }
+          @media (max-width: 479px) {
+            .rootClassName16 {
+              top: -127px;
+              left: 0px;
+              right: 0px;
+              position: static;
+              align-self: center;
+              margin-top: 1%;
+              margin-left: 25%;
+              margin-right: 25%;
+              margin-bottom: 1%;
             }
           }
         `}
