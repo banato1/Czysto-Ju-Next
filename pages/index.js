@@ -173,7 +173,7 @@ const LandingPage = () => {
                   description='Firma sprzÄtajÄca "Czysto JuÅ¼" oferuje usÅugÄ - codzienne sprzÄtanie pomieszczeÅ biurowych, ktÃ³re ma na celu utrzymanie PaÅstwa biura w atrakcyjnej dla klientÃ³w formie.UsÅuga sprzÄtania biurowcÃ³w pozwala pracownikom biurowym skoncentrowaÄ siÄ na swojej pracy.'
                   rootClassName="rootClassName2"
                   className="component6"
-                ></Usluga>
+                ></Usluga
               </a>
             </Link>
             <Link href="/sprztanieporemoncie">
@@ -190,13 +190,10 @@ const LandingPage = () => {
           </div>
           <h1 className="text15">Skontaktuj siÄ z nami !</h1>
           <form action="http://mihailmaximov.ru/projects/mail/post.php" method="post" name="form">
-  <!-- Поле ввода имени -->
   <input name="name" type="text" placeholder="Imie" />
   <br>
-  <!-- Поле ввода почты  -->
   <input name="email" type="text" placeholder="E-mail/Kontakt" />
   <br>
-  <!-- Поле ввода для темы сообщения -->
  <p><select name="list1">
   <option>Wybierz temat</option>
   <option>Sprzątanie Biura</option>
@@ -206,7 +203,7 @@ const LandingPage = () => {
   <br>
   </textarea>
   <br>
-  <!-- Кнопка с надписью «Отправить», которая запускает обработчик формы -->
+
   <input type="submit" value="Wyśli" />
 </form>
           />
