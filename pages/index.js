@@ -552,14 +552,15 @@ const LandingPage = () => {
           .button {
             color: #ffffff;
             width: 25%;
+            height: 15%;
             font-style: normal;
-            margin-top: 0px;
+            margin-top: 5%;
             text-align: center;
             font-weight: 700;
-            margin-left: 172, 5px;
-            margin-right: 172, 5px;
+            margin-left: 37.5%;
+            margin-right: 37.5%;
             border-radius: 50px;
-            margin-bottom: 0px;
+            margin-bottom: 5%;
             text-decoration: none;
             background-color: #088c00;
           }
