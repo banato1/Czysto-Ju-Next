@@ -191,9 +191,10 @@ const LandingPage = () => {
           <h1 className="text15">Skontaktuj siÄ z nami !</h1>
           <form
             name="contact-form"
-            action="main/public/playground_assets/post.php"
+            action="playground_assets/post.php"
             method="post"
-            enctype="text/plain"
+            enctype="application/x-www-form-urlencoded"
+            target="post"
             className="form"
           >
             <input type="text" placeholder="Imie" className="textinput input" />
