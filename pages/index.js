@@ -191,9 +191,9 @@ const LandingPage = () => {
           <h1 className="text15">Skontaktuj siÄ z nami !</h1>
           <form
             name="contact-form"
-            action="Czysto-Ju-Next/post.php"
+            action="post.php"
             method="post"
-            enctype="multipart/form-data"
+            enctype="text/plain"
             className="form"
           >
             <input type="text" placeholder="Imie" className="textinput input" />
@@ -535,32 +535,33 @@ const LandingPage = () => {
             margin-bottom: 2%;
           }
           .form {
-            width: 40%;
+            width: 460px;
             height: 60%;
             position: relative;
+            align-self: center;
           }
           .textinput {
-            width: 465px;
+            width: 460px;
             border-radius: 20px;
           }
           .textinput1 {
-            width: 465px;
+            width: 460px;
             margin-top: 10px;
             border-radius: 20px;
           }
           .button {
             color: #ffffff;
-            font-size: 20px;
+            width: 25%;
             font-style: normal;
-            margin-top: 5%;
+            margin-top: 0px;
             text-align: center;
             font-weight: 700;
-            line-height: 1;
-            margin-left: 40%;
-            border-color: #ffffff;
-            margin-right: 40%;
-            border-radius: 20px;
-            background-color: #bf0404;
+            margin-left: 172, 5px;
+            margin-right: 172, 5px;
+            border-radius: 50px;
+            margin-bottom: 0px;
+            text-decoration: none;
+            background-color: #088c00;
           }
           .footer {
             color: var(--dl-color-gray-white);

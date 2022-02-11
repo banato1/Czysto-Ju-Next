@@ -88,7 +88,7 @@ const Kontakt = () => {
                   />
                 </span>
                 <a href="mailto:kontakt@czystojuz.pl?subject=">
-                  <span className="text06">kontakt@cystojuz.pl</span>
+                  <span className="text06">kontakt@czystojuz.pl</span>
                 </a>
                 <span className="text07"></span>
               </h2>
