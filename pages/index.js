@@ -191,7 +191,7 @@ const LandingPage = () => {
           <h1 className="text15">Skontaktuj siÄ z nami !</h1>
           <form
             name="contact-form"
-            action="public/playground_assets/post.php"
+            action="main/public/playground_assets/post.php"
             method="post"
             enctype="text/plain"
             className="form"
@@ -215,24 +215,19 @@ const LandingPage = () => {
               </a>
             </Link>
             <div className="container3">
-              <span className="text16">
-                <span className="text17">O n</span>
-                <Link href="/onas">
-                  <a></a>
-                </Link>
-                <span className="text18">as</span>
-              </span>
+              <Link href="/onas">
+                <a className="link14">
+                  <span className="text16">O n</span>
+                  <span></span>
+                  <span className="text18">as</span>
+                </a>
+              </Link>
               <Link href="/kontakt">
                 <a className="link15">Kontakt</a>
               </Link>
-              <a
-                href="https://example.com"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="link16"
-              >
-                Personalna oferta
-              </a>
+              <Link href="/kontakt">
+                <a className="link16">Personalna oferta</a>
+              </Link>
               <a
                 href="https://example.com"
                 target="_blank"
@@ -552,7 +547,8 @@ const LandingPage = () => {
           .button {
             color: #ffffff;
             width: 25%;
-            height: 15%;
+            height: 50px;
+            font-size: 28px;
             font-style: normal;
             margin-top: 5%;
             text-align: center;
@@ -560,7 +556,7 @@ const LandingPage = () => {
             margin-left: 37.5%;
             margin-right: 37.5%;
             border-radius: 50px;
-            margin-bottom: 5%;
+            margin-bottom: 0%;
             text-decoration: none;
             background-color: #088c00;
           }
@@ -596,11 +592,11 @@ const LandingPage = () => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .text16 {
+          .link14 {
             align-self: center;
             text-decoration: none;
           }
-          .text17 {
+          .text16 {
             text-decoration: none;
           }
           .text18 {
@@ -857,7 +853,7 @@ const LandingPage = () => {
             .container3 {
               width: 100%;
             }
-            .text16 {
+            .link14 {
               margin-bottom: var(--dl-space-space-halfunit);
             }
             .link15 {
